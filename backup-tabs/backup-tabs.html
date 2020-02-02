@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="backup-tabs.css" />
+  </head>
+  <body>
+    <h1>Backup tabs</h1>
+    <div id="popup-content">
+      <h2>Save opened tabs</h2>
+      <ul>
+        <li>Every opened tab (except this one) will be saved to external html file</li>
+      </ul>
+      <div id="btnSave" class="button save">Save tabs</div>
+      <br />
+      <h2>Import saved tabs</h2>
+      <ul>
+        <li>Select any file which has links (a href) in it.</li>
+        <li>Press Import button and every found link will be opened in the new tab.</li>
+      </ul>
+      <div id="btnLoad" class="button load">Import tabs</div>
+      <input type="file" id="fileLoad" style="display:none" />
+    </div>
+    <div id="error-content" class="hidden" style="color:red">
+      <p>There was error.</p>
+    </div>
+    <script src="backup-tabs.js"></script>
+  </body>
+</html>
